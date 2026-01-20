@@ -62,3 +62,12 @@ header .menu-toggle-class {
         display: none;
     }
 }
+
+@media (min-width: 768px) {
+    header .nav-mob {
+        display: none;
+        border-top-width: 1px;
+        border-color: #D1D5DB;
+        background-color: #ffff;
+    }
+}
