@@ -76,15 +76,17 @@ header .menu-toggle-class {
 }
 
 .hero-height {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-
     background-color: #020617;
     background-image:
         linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
     background-size: 32px 32px;
+}
+
+section#home .content {
+    position: relative; 
+    z-index: 10; 
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; 
+    max-width: 48rem; 
 }
