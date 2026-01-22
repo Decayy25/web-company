@@ -1,17 +1,13 @@
+* {
+    border: hsla(217, 33%, 18%, 1);
+}
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    color: #343a40;
-}
-
-.hero-height {
-    height: auto;
-}
-
-@media (min-width: 768px) {
-    .hero-height {
-        height: 60vh;
-    }
+    background-color: hsl(222, 84%, 5%);
+    color: hsla(210, 40%, 98%, 1);
+    font-feature-settings: "rlig", 1, "calt" 1;
+    margin: 0;
+    line-height: inherit;
 }
 
 header {
@@ -19,7 +15,7 @@ header {
     top: 0;
     z-index: 40;
     width: 100%;
-    background-color: #ffffff;
+    background-color: hsl(222, 84%, 5%);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1),
                 0 1px 2px rgba(0, 0, 0, 0.06);
 }
@@ -70,4 +66,25 @@ header .menu-toggle-class {
         border-color: #D1D5DB;
         background-color: #ffff;
     }
+}
+
+/* Hero */
+@media (min-width: 768px) {
+    .hero-height {
+        height: 60vh;
+    }
+}
+
+.hero-height {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    background-color: #020617;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 32px 32px;
 }
