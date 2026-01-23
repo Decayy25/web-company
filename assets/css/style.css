@@ -1,9 +1,9 @@
 * {
-    border: hsla(217, 33%, 18%, 1);
+    outline: hsla(217, 33%, 18%, 1);
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: hsl(222, 84%, 5%);
+    background-color: #020817;
     color: hsla(210, 40%, 98%, 1);
     font-feature-settings: "rlig", 1, "calt" 1;
     margin: 0;
@@ -15,7 +15,7 @@ header {
     top: 0;
     z-index: 40;
     width: 100%;
-    background-color: hsl(222, 84%, 5%);
+    background-color: #020817;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1),
                 0 1px 2px rgba(0, 0, 0, 0.06);
 }
@@ -46,7 +46,7 @@ header .nav-mob {
 }
 
 header .menu-toggle-class {
-    color: #374151;
+    color: #51a2ff;
     font-size: 1.5rem;
     background: none;
     border: none;
@@ -89,4 +89,53 @@ section#home .content {
     padding-left: 1.5rem;
     padding-right: 1.5rem; 
     max-width: 48rem; 
+}
+
+/* About */
+.about-section {
+  background-color: #020617;
+  padding: 6rem 2rem;   
+}
+
+.about-container {
+  max-width: 1400px;    
+  margin: 0 auto;
+  display: flex;
+  gap: 10rem;            
+  align-items: stretch;
+  justify-content: center;
+}
+
+/* KIRI 4 BOX */
+.about-left {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 200px);
+  gap: 10rem;
+}
+
+.about-box {
+  width: 280px;
+  height: 280px;
+  background: #1a1b26;
+  border: 6px solid #51a2ff;
+  border-radius: 28px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .about-left {
+    grid-template-columns: repeat(2, 160px);
+    gap: 2rem;
+  }
+
+  .about-box {
+    width: 160px;
+    height: 160px;
+  }
 }
