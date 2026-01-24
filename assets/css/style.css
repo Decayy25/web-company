@@ -92,7 +92,7 @@ section#home .content {
 }
 
 /* About */
-.about-section {
+body .about-section {
   background-color: #020617;
   padding: 6rem 2rem;   
 }

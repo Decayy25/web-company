@@ -8,30 +8,40 @@ const aboutLeft = document.getElementById('about-left');
 
 const members = [
   {
-    title: "Kurikulum",
-    desc: "Kurikulum yang digunakan saat ini",
+    title: "Visi Misi & Tujuan",
+    desc: "visi-misi yang digunakan saat ini.",
     img: "assets/img/profile.png",
-    href: "pages/kurikulum.html"
+    href: "pages/visi-misi.html",
+    aos: "fade-down-right"
   },
   {
-    title: "Jurusan",
+    title: "Informasi Jurusan",
     desc: "Jurusan yang tersedia saat ini.",
     img: "assets/img/profile.png",
-    href: "pages/jurusan.html"
+    href: "pages/jurusan.pdf",
+    aos: "fade-down-left"
   },
   {
     title: "Jadwal Pelajaran",
-    desc: "",
+    desc: "Jadwal yang digunakan saat ini.",
     img: "assets/img/profile.png",
-    href: ""
+    href: "pages/jadwal.pdf",
+    aos: "fade-up-right"
   },
+  {
+    title: "Brosur PPDB 2024",
+    desc: "Download Brosur",
+    img: "assets/img/profile.png",
+    href: "pages/brosur.pdf",
+    aos: "fade-up-left"
+  }
 ];
 
 if (aboutLeft) {
   aboutLeft.innerHTML = members.map(member => `
-    <a href="${member.href}" class="block">
+    <a href="${member.href}" class="block" target="_blank" data-aos="${member.aos}">
       <div class="about-box p-4 text-center hover:scale-105 transition">
-        <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-[#020617] mx-auto mb-4">
+        <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-[#020617] hover:border-[#51a2ff] mx-auto mb-4">
           <img src="${member.img}" class="w-full h-full object-cover">
         </div>
 
