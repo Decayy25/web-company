@@ -139,3 +139,22 @@ body .about-section {
     height: 160px;
   }
 }
+
+.hex-border {
+  background: linear-gradient(
+    270deg,
+    #020617,
+    #51a2ff,
+    #1a1b26,
+    #D1D5DB
+  );
+  background-size: 600% 600%;
+  animation: hexMove 6s ease infinite;
+}
+
+@keyframes hexMove {
+  0%   { background-position:   0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position:   0% 50%; }
+}
+
