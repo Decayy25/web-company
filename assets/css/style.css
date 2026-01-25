@@ -1,6 +1,11 @@
 * {
     outline: hsla(217, 33%, 18%, 1);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #020817;
@@ -146,7 +151,9 @@ body .about-section {
     #020617,
     #51a2ff,
     #1a1b26,
+    #51a2ff,
     #D1D5DB
+    
   );
   background-size: 600% 600%;
   animation: hexMove 6s ease infinite;

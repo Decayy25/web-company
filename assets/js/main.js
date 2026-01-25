@@ -8,10 +8,10 @@ const aboutLeft = document.getElementById('about-left');
 
 const members = [
   {
-    title: "Visi Misi & Tujuan",
-    desc: "visi-misi yang digunakan saat ini.",
+    title: "Ekstrakurikuler",
+    desc: "Ekstrakurikuler yang tersedia di sekolah kami.",
     img: "assets/img/profile.png",
-    href: "pages/visi-misi.html",
+    href: "pages/ekstrakurikuler.html",
     aos: "fade-down-right",
     rotate: "-9deg"
   },
@@ -56,3 +56,12 @@ if (aboutLeft) {
     </a>
   `).join('');
 }
+
+// AOS refresh on scroll
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', () => {
+    setTimeout(() => {
+      AOS.refresh();
+    }, 300);
+  });
+});
