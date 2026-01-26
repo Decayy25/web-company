@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" style="color-scheme: dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMarT CLK</title>
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="../assets/css/style.css">
+     <link rel="icon" href="../assets/img/profile.png" type="image/png">
+
+    <!-- AOS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tools -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Shrikhand&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="../assets/css/output.css">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    
+    <!-- Header -->
+    <header>
+        <div class="container-head">
+          <div class="w-full mx-auto px-8 py-3 flex items-center justify-between">
+              <p class="text-2xl font-bold text-blue-400">SMarT Clk</p>
+                <nav class="navbar-class" id="navbar">
+                  <a href="../index.html" class="text-white hover:text-blue-500">Home</a>
+                  <a href="../index.html" class="text-white hover:text-blue-500">informasi</a>
+                  <a href="../index.html" class="text-white hover:text-blue-500">Visi-Misi</a>
+                  <a href="contact.html" class="text-white hover:text-blue-500">Contact</a>
+                </nav>
+            </div>
+
+            <div class="nav-mob">
+              <button class="menu-toggle-class" onclick="toggle_menu();">☰</button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mob-menu hidden bg-[#020617] border-t border-[#51a2ff]">
+          <a href="../index.html" class="block px-4 py-2 hover:text-[#51a2ff]">Home</a>
+          <a href="../index.html" class="block px-4 py-2 hover:text-[#51a2ff]">Informasi</a>
+          <a href="../index.html" class="block px-4 py-2 hover:text-[#51a2ff]">Visi-Misi</a>
+          <a href="contact.html" class="block px-4 py-2 hover:text-[#51a2ff]">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+
+      <!-- Ekskul  -->
+      <section id="ekstrakulikuler" class="py-20 bg-[#020617]">
+        <h2 class="text-3xl font-bold text-center mb-10 text-white">Ekstrakurikuler</h2>
+        <div id="info-eskul" class="w-full grid grid-cols-1 md:grid-cols-6 gap-6 px-6"></div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#1a1b26] py-14 mt-20">
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3 pl-4">SMarT CLK</h3>
+          <div class="inline-block p-1 rounded-full hex-border">
+            <img src="../assets/img/profile.png" alt="Profile" class="h-36 w-36 rounded-full bg-[#1a1b26]">
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3 text-white">Support</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-[#51a2ff]">Bantuan Akademik</a></li>
+            <li><a href="#" class="hover:text-[#51a2ff]">Informasi Kurikulum</a></li>
+            <li><a href="#" class="hover:text-[#51a2ff]">Tata Tertib Sekolah</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3 text-white">Social Media</h3>
+          <ul class="flex items-center space-x-4 text-sm">
+            <li><a href="https://www.instagram.com/smart_clk/" target="_blank" class="hover:text-[#51a2ff]"><i data-feather="instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100080470501420&ref=_ig_profile_ac" target="_blank" class="hover:text-[#51a2ff]"><i data-feather="facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/c/SMKMaarifTerpaduCicalengka119" target="_blank" class="hover:text-[#51a2ff]"><i data-feather="youtube"></i></a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3 text-white">Contact</h3>
+          <ul class="space-y-2 text-sm">
+            <li class="flex items-center gap-2">
+              <i data-feather="mail" class="w-4 h-4"></i><span>Email : smartclk@gmail.com</span></li>
+            <li class="flex items-center gap-2">
+              <i data-feather="phone" class="w-4 h-4"></i><span>Phone : (022) 7940056</span></li>
+          </ul>
+        </div>
+
+
+
+      </div>
+      <div class="border-t border-gray-700 mt-10 pt-5 text-center text-sm">
+        © 2026 SMarT CLK. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        AOS.init({
+            once: false,
+            offset: 120,
+            duration: 800,
+            easing: 'ease-out-cubic'
+        });
+    </script>
+    <script>AOS.refresh();</script>
+    <script>feather.replace()</script>
+</body>
+</html>

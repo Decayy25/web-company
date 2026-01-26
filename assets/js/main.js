@@ -3,7 +3,7 @@ function toggle_menu() {
     document.getElementById('mobile-menu').classList.toggle('hidden');
 }
 
-// about
+// Informasi
 const aboutLeft = document.getElementById('about-left');
 
 const members = [
@@ -11,7 +11,8 @@ const members = [
     title: "Ekstrakurikuler",
     desc: "Ekstrakurikuler yang tersedia di sekolah kami.",
     img: "assets/img/profile.png",
-    href: "pages/ekstrakurikuler.html",
+    target: "",
+    href: "pages/Eskul.html",
     aos: "fade-down-right",
     rotate: "-9deg"
   },
@@ -19,6 +20,7 @@ const members = [
     title: "Informasi Jurusan",
     desc: "Jurusan yang tersedia saat ini.",
     img: "assets/img/profile.png",
+    target: "_blank",
     href: "pages/jurusan.pdf",
     aos: "fade-down-left",
     rotate: "9deg"
@@ -27,6 +29,7 @@ const members = [
     title: "Jadwal Pelajaran",
     desc: "Jadwal yang digunakan saat ini.",
     img: "assets/img/profile.png",
+    target: "_blank",
     href: "pages/jadwal.pdf",
     aos: "fade-up-right",
     rotate: "-9deg"
@@ -35,6 +38,7 @@ const members = [
     title: "Brosur PPDB 2024",
     desc: "Download Brosur",
     img: "assets/img/profile.png",
+    target: "_blank",
     href: "pages/brosur.pdf",
     aos: "fade-up-left",
     rotate: "9deg"
@@ -43,7 +47,7 @@ const members = [
 
 if (aboutLeft) {
   aboutLeft.innerHTML = members.map(member => `
-    <a href="${member.href}" class="block" target="_blank" data-aos="${member.aos}">
+    <a href="${member.href}" class="block" target="${member.target}" data-aos="${member.aos}">
       <div class="about-box p-4 text-center hover:scale-105 transition-transform 
       duration-300 hover:rotate-[${member.rotate}]">
         <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-[#51a2ff] mx-auto mb-4">
@@ -65,3 +69,35 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     }, 300);
   });
 });
+
+// Ekstrakurikuler
+const info_eskul = document.getElementById('info-eskul');
+
+const eskul_list = [
+  {eks: 'Osis', img: '../assets/img/osis.jpg', href: 'https://www.instagram.com/osissmartpresent_/'},
+  {eks: 'Irma', img: '../assets/img/irma.jpg', href: 'https://www.instagram.com/irmasmartclk_/'},
+  {eks: 'Paskibra', img: '../assets/img/paskibra.jpg', href: ''},
+  {eks: 'Lingkung Seni', img: '../assets/img/lingkung_seni.jpg', href: 'https://www.instagram.com/_seniituasik/'},
+  {eks: 'Futsal', img: '../assets/img/futsal.jpg', href: ''},
+  {eks: 'Basket', img: '../assets/img/basket.jpg', href: 'https://www.instagram.com/basketsmart_/'},
+  {eks: 'Pramuka', img: '../assets/img/pramuka.jpg', href: 'https://www.instagram.com/pramukasmartpresent_/'},
+  {eks: 'PMR', img: '../assets/img/pmr.jpg', href: 'https://www.instagram.com/pmrsmart__/'},
+  {eks: 'Badbinton', img: '../assets/img/badbinton.jpg', href: ''},
+  {eks: 'Voli', img: '../assets/img/voli.jpg', href: ''},
+  {eks: 'Pik-r', img: '../assets/img/pik-r.jpg', href: 'https://www.instagram.com/pikr.smrt/'},
+  {eks: 'MAPA', img: '../assets/img/mapa.jpg', href: 'https://www.instagram.com/rohis.smartclk/'},
+];
+
+// tempalte literal
+if (info_eskul) {
+  info_eskul.innerHTML = eskul_list.map(eks_list=>
+  `
+  <a href="${eks_list.href}" target="_blank" class="block" data-aos="fade-up" data-aos-delay="8000">
+    <div class="eskul-box bg-[#1a1b26] p-6 text-center rounded-lg hover:scale-105">
+      <img src="${eks_list.img}" alt="${eks_list.eks}" class="w-full h-40 object-cover rounded-full mb-4">
+      <h2 class="text-lg font-semibold">${eks_list.eks}</h2>
+    </div>
+  </a>
+  `
+  ).join("");
+}
