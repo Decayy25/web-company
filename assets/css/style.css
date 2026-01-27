@@ -59,27 +59,7 @@ header .menu-toggle-class {
     cursor: pointer;
 }
 
-@media (min-width: 768px) {
-    header .menu-toggle-class {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) {
-    header .nav-mob {
-        display: none;
-        border-top-width: 1px;
-        border-color: #D1D5DB;
-        background-color: #ffff;
-    }
-}
-
 /* Hero */
-@media (min-width: 768px) {
-    .hero-height {
-        height: 60vh;
-    }
-}
 
 .hero-height {
     background-color: #020617;
@@ -126,24 +106,6 @@ body .about-section {
   background: #1a1b26;
   border: 6px solid #51a2ff;
   border-radius: 28px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    gap: 4rem;
-  }
-
-  .about-left {
-    grid-template-columns: repeat(2, 160px);
-    gap: 2rem;
-  }
-
-  .about-box {
-    width: 160px;
-    height: 160px;
-  }
 }
 
 .hex-border {

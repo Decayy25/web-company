@@ -9,7 +9,6 @@ const aboutLeft = document.getElementById('about-left');
 const members = [
   {
     title: "Ekstrakurikuler",
-    desc: "Ekstrakurikuler yang tersedia di sekolah kami.",
     img: "assets/img/profile.png",
     target: "",
     href: "pages/Eskul.html",
@@ -18,7 +17,6 @@ const members = [
   },
   {
     title: "Informasi Jurusan",
-    desc: "Jurusan yang tersedia saat ini.",
     img: "assets/img/profile.png",
     target: "_blank",
     href: "pages/jurusan.pdf",
@@ -27,7 +25,6 @@ const members = [
   },
   {
     title: "Jadwal Pelajaran",
-    desc: "Jadwal yang digunakan saat ini.",
     img: "assets/img/profile.png",
     target: "_blank",
     href: "pages/jadwal.pdf",
@@ -36,26 +33,23 @@ const members = [
   },
   {
     title: "Brosur PPDB 2024",
-    desc: "Download Brosur",
     img: "assets/img/profile.png",
     target: "_blank",
     href: "pages/brosur.pdf",
     aos: "fade-up-left",
     rotate: "9deg"
-  }
+  },
 ];
 
 if (aboutLeft) {
   aboutLeft.innerHTML = members.map(member => `
     <a href="${member.href}" class="block" target="${member.target}" data-aos="${member.aos}">
       <div class="about-box p-4 text-center hover:scale-105 transition-transform 
-      duration-300 hover:rotate-[${member.rotate}]">
-        <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-[#51a2ff] mx-auto mb-4">
+      duration-300 hover:rotate-[${member.rotate}] w-48 mx-auto">
+        <div class="max-w-32 max-h-32 rounded-full overflow-hidden border-4 border-[#51a2ff] mx-auto mb-4">
           <img src="${member.img}" class="w-full h-full object-cover">
         </div>
-
         <h3 class="text-lg font-semibold">${member.title}</h3>
-        <p class="text-sm text-slate-300 mt-2">${member.desc}</p>
       </div>
     </a>
   `).join('');
