@@ -68,18 +68,18 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 const info_eskul = document.getElementById('info-eskul');
 
 const eskul_list = [
-  {eks: 'Osis', img: '../assets/img/osis.jpg', href: 'https://www.instagram.com/osissmartpresent_/'},
-  {eks: 'Irma', img: '../assets/img/irma.jpg', href: 'https://www.instagram.com/irmasmartclk_/'},
-  {eks: 'Paskibra', img: '../assets/img/paskibra.jpg', href: ''},
-  {eks: 'Lingkung Seni', img: '../assets/img/lingkung_seni.jpg', href: 'https://www.instagram.com/_seniituasik/'},
-  {eks: 'Futsal', img: '../assets/img/futsal.jpg', href: ''},
-  {eks: 'Basket', img: '../assets/img/basket.jpg', href: 'https://www.instagram.com/basketsmart_/'},
-  {eks: 'Pramuka', img: '../assets/img/pramuka.jpg', href: 'https://www.instagram.com/pramukasmartpresent_/'},
-  {eks: 'PMR', img: '../assets/img/pmr.jpg', href: 'https://www.instagram.com/pmrsmart__/'},
-  {eks: 'Badbinton', img: '../assets/img/badbinton.jpg', href: ''},
-  {eks: 'Voli', img: '../assets/img/voli.jpg', href: ''},
-  {eks: 'Pik-r', img: '../assets/img/pik-r.jpg', href: 'https://www.instagram.com/pikr.smrt/'},
-  {eks: 'MAPA', img: '../assets/img/mapa.jpg', href: 'https://www.instagram.com/rohis.smartclk/'},
+  {eks: 'Osis', img: '../assets/img/Ekstrakurikuler/osis.jpg', href: 'https://www.instagram.com/osissmartpresent_/'},
+  {eks: 'Irma', img: '../assets/img/Ekstrakurikuler/irma.jpg', href: 'https://www.instagram.com/irmasmartclk_/'},
+  {eks: 'Paskibra', img: '../assets/img/Ekstrakurikuler/paskibra.jpg', href: ''},
+  {eks: 'Lingkung Seni', img: '../assets/img/Ekstrakurikuler/lingkung_seni.jpg', href: 'https://www.instagram.com/_seniituasik/'},
+  {eks: 'Futsal', img: '../assets/img/Ekstrakurikuler/futsal.jpg', href: ''},
+  {eks: 'Basket', img: '../assets/img/Ekstrakurikuler/basket.jpg', href: 'https://www.instagram.com/basketsmart_/'},
+  {eks: 'Pramuka', img: '../assets/img/Ekstrakurikuler/pramuka.jpg', href: 'https://www.instagram.com/pramukasmartpresent_/'},
+  {eks: 'PMR', img: '../assets/img/Ekstrakurikuler/pmr.jpg', href: 'https://www.instagram.com/pmrsmart__/'},
+  {eks: 'Badbinton', img: '../assets/img/Ekstrakurikuler/badbinton.jpg', href: ''},
+  {eks: 'Voli', img: '../assets/img/Ekstrakurikuler/voli.jpg', href: ''},
+  {eks: 'Pik-r', img: '../assets/img/Ekstrakurikuler/pik-r.jpg', href: 'https://www.instagram.com/pikr.smrt/'},
+  {eks: 'MAPA', img: '../assets/img/Ekstrakurikuler/mapa.jpg', href: 'https://www.instagram.com/rohis.smartclk/'},
 ];
 
 // tempalte literal
@@ -94,4 +94,14 @@ if (info_eskul) {
   </a>
   `
   ).join("");
+}
+
+// contact form
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Terima kasih telah menghubungi kami! Pesan Anda telah diterima.');
+    contactForm.reset();
+  });
 }
