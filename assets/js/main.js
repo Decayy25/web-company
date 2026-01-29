@@ -70,16 +70,17 @@ const info_eskul = document.getElementById('info-eskul');
 const eskul_list = [
   {eks: 'Osis', img: '../assets/img/Ekstrakurikuler/osis.jpg', href: 'https://www.instagram.com/osissmartpresent_/'},
   {eks: 'Irma', img: '../assets/img/Ekstrakurikuler/irma.jpg', href: 'https://www.instagram.com/irmasmartclk_/'},
-  {eks: 'Paskibra', img: '../assets/img/Ekstrakurikuler/paskibra.jpg', href: ''},
+  {eks: 'Paskibra', img: '../assets/img/Ekstrakurikuler/paskibra.jpg', href: 'https://www.instagram.com/pasustaka/'},
   {eks: 'Lingkung Seni', img: '../assets/img/Ekstrakurikuler/lingkung_seni.jpg', href: 'https://www.instagram.com/_seniituasik/'},
-  {eks: 'Futsal', img: '../assets/img/Ekstrakurikuler/futsal.jpg', href: ''},
+  {eks: 'Futsal', img: '../assets/img/Ekstrakurikuler/futsal.jpg', href: 'https://www.instagram.com/smart_futsal/'},
   {eks: 'Basket', img: '../assets/img/Ekstrakurikuler/basket.jpg', href: 'https://www.instagram.com/basketsmart_/'},
   {eks: 'Pramuka', img: '../assets/img/Ekstrakurikuler/pramuka.jpg', href: 'https://www.instagram.com/pramukasmartpresent_/'},
   {eks: 'PMR', img: '../assets/img/Ekstrakurikuler/pmr.jpg', href: 'https://www.instagram.com/pmrsmart__/'},
-  {eks: 'Badbinton', img: '../assets/img/Ekstrakurikuler/badbinton.jpg', href: ''},
-  {eks: 'Voli', img: '../assets/img/Ekstrakurikuler/voli.jpg', href: ''},
+  {eks: 'Badbinton', img: '../assets/img/Ekstrakurikuler/badbinton.jpg', href: 'https://www.instagram.com/shutlemater_/'},
+  {eks: 'Voli', img: '../assets/img/Ekstrakurikuler/voli.jpg', href: 'https://www.instagram.com/_smart_vollyball/'},
   {eks: 'Pik-r', img: '../assets/img/Ekstrakurikuler/pik-r.jpg', href: 'https://www.instagram.com/pikr.smrt/'},
   {eks: 'MAPA', img: '../assets/img/Ekstrakurikuler/mapa.jpg', href: 'https://www.instagram.com/rohis.smartclk/'},
+  {eks: 'Karate', img: '../assets/img/Ekstrakurikuler/karate.jpg', href: 'https://www.instagram.com/bkc_smart/'},
 ];
 
 // tempalte literal
