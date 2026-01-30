@@ -106,3 +106,29 @@ if (contactForm) {
     contactForm.reset();
   });
 }
+
+// Profil Guru
+const info_guru = document.getElementById('info-guru');
+
+const guru_list = [
+  {nama: 'Budi Santoso', img: '../assets/img/Guru/budi_santoso.jpg', mapel: 'Matematika'},
+  {nama: 'Siti Aminah', img: '../assets/img/Guru/siti_aminah.jpg', mapel: 'Bahasa Indonesia'},
+  {nama: 'Andi Wijaya', img: '../assets/img/Guru/andi_wijaya.jpg', mapel: 'Fisika'},
+  {nama: 'Dewi Lestari', img: '../assets/img/Guru/dewi_lestari.jpg', mapel: 'Bahasa Inggris'},
+  {nama: 'Rina Kurnia', img: '../assets/img/Guru/rina_kurnia.jpg', mapel: 'Kimia'},
+  {nama: 'Agus Pratama', img: '../assets/img/Guru/agus_pratama.jpg', mapel: 'Biologi'},
+];
+
+if (info_guru) {
+  info_guru.innerHTML = guru_list.map(guru=>
+  `
+  <div class="block" data-aos="fade-up" data-aos-delay="8000">
+    <div class="guru-box bg-[#1a1b26] p-6 text-center rounded-lg hover:scale-105">
+      <img src="${guru.img}" alt="${guru.nama}" class="w-full h-40 object-cover rounded-full mb-4">
+      <h2 class="text-lg font-semibold text-white">${guru.nama}</h2>
+      <p class="text-white">${guru.mapel}</p>
+    </div>
+  </div>
+  `
+  ).join("");
+}
