@@ -132,3 +132,24 @@ if (info_guru) {
   `
   ).join("");
 }
+
+// bantruan akademik
+const info_bntn_akademik = document.getElementById('info-bntn-akademik');
+
+const bntn_akademik_list = [
+  {title: 'Ujian Sertifikasi MTCNA Gratis', desc: 'Khusus bagi semua siswa di jurusan TKJ/IT, sekolah memfasilitasi ujian sertifikasi internasional MTCNA tanpa biaya tambahan (Free of Charge)'},
+  {title: 'Tes Kemampuan Akademik', desc: 'Sekolah menyedian tes kemampuan akademik secara berkala untuk siswa yang ingin masuk perguruan tinggi favorit mereka.'}
+];
+
+
+if(info_bntn_akademik) {
+  info_bntn_akademik.innerHTML = bntn_akademik_list.map(bntn_akademik=>`
+    <div class="p-4 bg-[#1a1b26] rounded-2xl border-5 border-[#51a2ff]" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+      <h3 class="text-white font-semibold">${bntn_akademik.title}</h3>
+      <br>
+      <p>
+        ${bntn_akademik.desc}
+      </p>
+    </div>
+  `).join("");
+} 

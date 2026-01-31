@@ -128,3 +128,10 @@ body .about-section {
   100% { background-position:   0% 50%; }
 }
 
+/* bantuan akademik */
+#info-bntn-akademik {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    padding: 0 1rem;
+}
