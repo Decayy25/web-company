@@ -138,7 +138,8 @@ const info_bntn_akademik = document.getElementById('info-bntn-akademik');
 
 const bntn_akademik_list = [
   {title: 'Ujian Sertifikasi MTCNA Gratis', desc: 'Khusus bagi semua siswa di jurusan TKJ/IT, sekolah memfasilitasi ujian sertifikasi internasional MTCNA tanpa biaya tambahan (Free of Charge)'},
-  {title: 'Tes Kemampuan Akademik', desc: 'Sekolah menyedian tes kemampuan akademik secara berkala untuk siswa yang ingin masuk perguruan tinggi favorit mereka.'}
+  {title: 'Tes Kemampuan Akademik', desc: 'Sekolah menyedian tes kemampuan akademik secara berkala untuk siswa yang ingin masuk perguruan tinggi favorit mereka.'},
+  {title: 'Bimbingan Konseling', desc: 'Sekolah Menyediakan layanan bagi semua orang di sekolah termasuk para guru dan staf yang ingin bercerita tentang masalah pada kehidupanya'}
 ];
 
 
