@@ -154,3 +154,79 @@ if(info_bntn_akademik) {
     </div>
   `).join("");
 } 
+
+// Tata tertib sekolah pada lab komputer
+const lab_komputer = document.getElementById('lab-komputer');
+
+const lab_komputer_list = [
+  { tata: "Jam Operasional", paragraf : 'Dimulai dari jam 07.00 - 16.30 WIB di hari Senin - Jumat, Bila ada  Penggunaan diluar jam tersebut harap  koordinasi dengan Laboran dan Wakasek Sarana & Prasarana.'},
+  { tata: "Merapihkan Meja", paragraf : 'Pengguna laboraturium wajib merapihkan kembali meja, kursi, mouse, keyboard, ataupun perangkat praktikum lainnya setiap selesai praktikum atau menggunakan laboraturium komputer.'},
+  { tata: "Menjaga Kebersihan", paragraf : 'Pengguna laboraturium komputer wajib turut serta menjaga kebersihan laboraturium komputer.'},
+  { tata: "Mematikan Alat/Perangkat", paragraf: 'Setelah selesai praktikum, pengguna mematikan lampu, proyektor dan komputer sesuai dengan prosedur.'}
+];
+
+// Buat grid 4x4 untuk tata tertib lab komputer
+const totalGrid = 4;
+const tataGrid = [];
+for (let i = 0; i < totalGrid; i++) {
+  if (lab_komputer_list[i]) {
+    tataGrid.push(`
+      <div class="p-4 bg-[#1a1b26] rounded-xl border-t-1 border-[#51a2ff] flex flex-col justify-center items-center min-h-[120px] transition-all duration-1000 hover:border-1 cursor-pointer group" data-aos="fade-up" data-aos-duration="800" data-tata-index="${i}">
+        <h3 class="text-white font-semibold text-center select-none">${lab_komputer_list[i].tata}</h3>
+        <div class="tata-paragraf hidden w-full">
+          <p class="text-white mt-2 text-center text-sm">${lab_komputer_list[i].paragraf}</p>
+        </div>
+      </div>
+    `);
+  } else {
+    tataGrid.push(`
+      <div class="p-4 bg-transparent rounded-xl border border-dashed border-[#51a2ff] min-h-[120px] opacity-30"></div>
+    `);
+  }
+}
+lab_komputer.innerHTML = `
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+    ${tataGrid.join('')}
+  </div>
+`;
+
+// Accordion click event for tata tertib (hanya satu terbuka)
+document.querySelectorAll('[data-tata-index]').forEach(div => {
+  div.addEventListener('click', function() {
+    document.querySelectorAll('.tata-paragraf').forEach(p => p.classList.add('hidden'));
+    const paragraf = this.querySelector('.tata-paragraf');
+    if (paragraf) {
+      paragraf.classList.remove('hidden');
+    }
+  });
+});
+
+// Template Literal (tidak diperkenankan)
+const not_allowed = document.getElementById('not-allowed');
+
+const not_allowed_list = [
+  { id: 1, rule: 'MENG-INSTALL APLIKASI', desc: 'Tanpa seizin laboran atau guru'},
+  { id: 2, rule: 'MEMINDAHKAN ALAT PRAKTIKUM', desc: '(misalnya: keyboard, mouse, layar monitor, dll)'},
+  { id: 3, rule: 'MENGUBAH TATA LETAK', desc: 'Tata letak/Layout perangkat yang ada di laboraturium komputer'},
+  { id: 4, rule: 'MEMBUAT KEGADUHAN', desc: 'Karena mengganggu kenyamanan pengguna laboraturium lain'},
+  { id: 5, rule: 'TIDAK DIPERBOLEHKAN', desc: 'Laboraturium komputer tidak diperbolehkan untuk dipakai kegiatan diluar kegiatan akademik'},
+  { id: 6, rule: 'MEMBAWA MAKANAN ATAU MINUMAN', desc: 'Ke dalam laboraturium komputer'},
+  { id: 7, rule: 'MERUSAK ATAUPUN MENGHILANGKAN ALAT', desc: 'Alat - alat praktikum di laboraturium komputer'},
+  { id: 8, rule: 'MEMUTAR MUSIK DENGAN KENCANG', desc: 'Silahkan menggunakan headset/earphone'},
+  { id: 9, rule: 'MENONTON FILM DAN BERMAIN GAME', desc: 'Kecuali untuk pembelajaran diperbolehkan'}
+];
+
+// Tampilkan not_allowed_list dalam bentuk tabel clean 2 kolom seperti contoh
+let notAllowedTable = '<div class="shadow-lg rounded-lg overflow-x-auto"><table class="min-w-full justify-center">';
+notAllowedTable += '<tbody>';
+for (let i = 0; i < not_allowed_list.length; i++) {
+  const item = not_allowed_list[i];
+  notAllowedTable += `
+    <tr>
+      <td class="py-2 px-4 text-white font-semibold w-1/3 align-top hex-text">${item.rule}</td>
+      <td class="py-2 px-4 text-white w-2/3 align-top hex-text">${item.desc}</td>
+    </tr>
+  `;
+}
+notAllowedTable += '</tbody></table></div>';
+not_allowed.innerHTML = notAllowedTable;
