@@ -117,6 +117,10 @@ const guru_list = [
   {nama: 'Dewi Lestari', img: '../assets/img/Guru/dewi_lestari.jpg', mapel: 'Bahasa Inggris'},
   {nama: 'Rina Kurnia', img: '../assets/img/Guru/rina_kurnia.jpg', mapel: 'Kimia'},
   {nama: 'Agus Pratama', img: '../assets/img/Guru/agus_pratama.jpg', mapel: 'Biologi'},
+  {nama: 'Lina Marlina', img: '../assets/img/Guru/lina_marlina.jpg', mapel: 'Sejarah'},
+  {nama: 'Hendra Gunawan', img: '../assets/img/Guru/hendra_gunawan.jpg', mapel: 'Geografi'},
+  {nama: 'Maya Sari', img: '../assets/img/Guru/maya_sari.jpg', mapel: 'Seni Budaya'},
+  {nama: 'Rudi Hartono', img: '../assets/img/Guru/rudi_hartono.jpg', mapel: 'Pendidikan Jasmani'},
 ];
 
 if (info_guru) {
