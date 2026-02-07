@@ -111,16 +111,25 @@ if (contactForm) {
 const info_guru = document.getElementById('info-guru');
 
 const guru_list = [
-  {nama: 'Budi Santoso', img: '../assets/img/Guru/budi_santoso.jpg', mapel: 'Matematika'},
-  {nama: 'Siti Aminah', img: '../assets/img/Guru/siti_aminah.jpg', mapel: 'Bahasa Indonesia'},
-  {nama: 'Andi Wijaya', img: '../assets/img/Guru/andi_wijaya.jpg', mapel: 'Fisika'},
-  {nama: 'Dewi Lestari', img: '../assets/img/Guru/dewi_lestari.jpg', mapel: 'Bahasa Inggris'},
-  {nama: 'Rina Kurnia', img: '../assets/img/Guru/rina_kurnia.jpg', mapel: 'Kimia'},
-  {nama: 'Agus Pratama', img: '../assets/img/Guru/agus_pratama.jpg', mapel: 'Biologi'},
-  {nama: 'Lina Marlina', img: '../assets/img/Guru/lina_marlina.jpg', mapel: 'Sejarah'},
-  {nama: 'Hendra Gunawan', img: '../assets/img/Guru/hendra_gunawan.jpg', mapel: 'Geografi'},
-  {nama: 'Maya Sari', img: '../assets/img/Guru/maya_sari.jpg', mapel: 'Seni Budaya'},
-  {nama: 'Rudi Hartono', img: '../assets/img/Guru/rudi_hartono.jpg', mapel: 'Pendidikan Jasmani'},
+  {id: 1, nama: 'Cecep Agus, S.Kom', img: '../assets/img/Guru/', jobDesc: 'Produktif TKJ & Kurikulum'},
+  {id: 2, nama: 'Tessa Nosalia Yosianti, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Prakarya dan Kewirausahaan'},
+  {id: 3, nama: 'Tati Dewi Widastuty, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Bahasa Inggris'},
+  {id: 4, nama: 'Fiqi Akhmad Taufiq, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Jasmani'},
+  {id: 5, nama: 'Dede Sinta Kristi, S.Hum', img: '../assets/img/Guru/', jobDesc: 'Bahasa Daerah Lokal'},
+  {id: 6, nama: 'Ahmad Adistia, S.Kom', img: '../assets/img/Guru/', jobDesc: 'Produktif TKJ'},
+  {id: 7, nama: 'Devi Kumala Asmawati', img: '../assets/img/Guru/', jobDesc: 'Produktif TKJ & Produktif DKV'},
+  {id: 8, nama: 'Riki Ramadan, S.Kom', img: '../assets/img/Guru/', jobDesc: 'Produktif TKJ'},
+  {id: 9, nama: 'Ridwan Maulana, A.Md', img: '../assets/img/Guru/', jobDesc: 'Produktif TKJ'},
+  {id: 10, nama: 'Ridwan Firdaus Suwadi Putra', img: '../assets/img/Guru/', jobDesc: 'Produktif TKJ'},
+  {id: 11, nama: 'Mukti Alimin, S.Kom', img: '../assets/img/Guru/', jobDesc: 'Produktif TKJ'},
+  {id: 12, nama: 'Fani Fatimah Kahfi, A.Md.kom', img: '../assets/img/Guru/', jobDesc: 'Pengrograman Web & Produktif DKV'},
+  {id: 13, nama: 'Vidi Firdaus, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Matematika'},
+  {id: 14, nama: 'Ana Nabilah Fauziah, S.Psi', img: '../assets/img/Guru/', jobDesc: 'Bimbingan Konseling'},
+  {id: 15, nama: 'Hasanudin, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Pendidikan Agama Islam'},
+  {id: 16, nama: 'Tiwa Kurniawan, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Jasmani'},
+  {id: 17, nama: 'Alpina Damayanti, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Pendidikan Kewarganegaraan'},
+  {id: 18, nama: 'Andri Prasetyo, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Sejarah Indonesia'},
+  {id: 19, nama: 'Fahmi Aji Fachrurroji, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Bahasa Indonesia & Sejarah'},
 ];
 
 if (info_guru) {
@@ -130,7 +139,7 @@ if (info_guru) {
     <div class="guru-box bg-[#1a1b26] p-6 text-center rounded-lg hover:scale-105">
       <img src="${guru.img}" alt="${guru.nama}" class="w-full h-40 object-cover rounded-full mb-4">
       <h2 class="text-lg font-semibold text-white">${guru.nama}</h2>
-      <p class="text-white">${guru.mapel}</p>
+      <p class="text-white mt-2">${guru.jobDesc}</p>
     </div>
   </div>
   `
