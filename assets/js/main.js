@@ -111,35 +111,39 @@ if (contactForm) {
 const info_guru = document.getElementById('info-guru');
 
 const guru_list = [
-  {id: 1, nama: 'Cecep Agus, S.Kom', img: '../assets/img/Guru/', jobDesc: 'Produktif TKJ & Kurikulum'},
-  {id: 2, nama: 'Tessa Nosalia Yosianti, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Prakarya dan Kewirausahaan'},
-  {id: 3, nama: 'Tati Dewi Widastuty, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Bahasa Inggris'},
-  {id: 4, nama: 'Fiqi Akhmad Taufiq, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Jasmani'},
-  {id: 5, nama: 'Dede Sinta Kristi, S.Hum', img: '../assets/img/Guru/', jobDesc: 'Bahasa Daerah Lokal'},
-  {id: 6, nama: 'Ahmad Adistia, S.Kom', img: '../assets/img/Guru/', jobDesc: 'Produktif TKJ'},
-  {id: 7, nama: 'Devi Kumala Asmawati', img: '../assets/img/Guru/', jobDesc: 'Produktif TKJ & Produktif DKV'},
-  {id: 8, nama: 'Riki Ramadan, S.Kom', img: '../assets/img/Guru/', jobDesc: 'Produktif TKJ'},
-  {id: 9, nama: 'Ridwan Maulana, A.Md', img: '../assets/img/Guru/', jobDesc: 'Produktif TKJ'},
-  {id: 10, nama: 'Ridwan Firdaus Suwadi Putra', img: '../assets/img/Guru/', jobDesc: 'Produktif TKJ'},
-  {id: 11, nama: 'Mukti Alimin, S.Kom', img: '../assets/img/Guru/', jobDesc: 'Produktif TKJ'},
-  {id: 12, nama: 'Fani Fatimah Kahfi, A.Md.kom', img: '../assets/img/Guru/', jobDesc: 'Pengrograman Web & Produktif DKV'},
-  {id: 13, nama: 'Vidi Firdaus, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Matematika'},
-  {id: 14, nama: 'Ana Nabilah Fauziah, S.Psi', img: '../assets/img/Guru/', jobDesc: 'Bimbingan Konseling'},
-  {id: 15, nama: 'Hasanudin, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Pendidikan Agama Islam'},
-  {id: 16, nama: 'Tiwa Kurniawan, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Jasmani'},
-  {id: 17, nama: 'Alpina Damayanti, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Pendidikan Kewarganegaraan'},
-  {id: 18, nama: 'Andri Prasetyo, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Sejarah Indonesia'},
-  {id: 19, nama: 'Fahmi Aji Fachrurroji, S.Pd', img: '../assets/img/Guru/', jobDesc: 'Bahasa Indonesia & Sejarah'},
+  { id: 1, nama: 'Yanti Mulyanti, S.Pd', img: '../assets/img/Guru/', code: 'YMT'},
+  { id: 2, nama: 'Cecep Agus, S.Kom', img: '../assets/img/Guru/', code: 'CAG'},
+  { id: 3, nama: 'Handy Rusnandy, S.Kom', img: '../assets/img/Guru/', code: 'HRS'},
+  { id: 4, nama: 'Tessa Nosalia Yosianti, S.Pd', img: '../assets/img/Guru/', code: 'TNY' },
+  { id: 5, nama: 'Tati Dewi Widastuty, S.Pd', img: '../assets/img/Guru/', code: 'TDW' },
+  { id: 6, nama: 'Fiqi Akhmad Taufiq, S.Pd', img: '../assets/img/Guru/', code: 'FAT' },
+  { id: 7, nama: 'Dede Sinta Kristi, S.Hum', img: '../assets/img/Guru/', code: 'DSK' },
+  { id: 8, nama: 'Ahmad Adistia, S.Kom', img: '../assets/img/Guru/', code: 'AAD' },
+  { id: 9, nama: 'Devi Kumala Asmawati', img: '../assets/img/Guru/', code: 'DKA' },
+  { id: 10, nama: 'Riki Ramadan, S.Kom', img: '../assets/img/Guru/', code: 'RKI' },
+  { id: 11, nama: 'Ridwan Firdaus Suwadi Putra, S.Kom', img: '../assets/img/Guru/', code: 'RID' },
+  { id: 12, nama: 'Mukti Alimin, S.Kom', img: '../assets/img/Guru/', code: 'MKT' },
+  { id: 13, nama: 'Ridwan Maulana, A.Md', img: '../assets/img/Guru/', code: 'RWN' },
+  { id: 14, nama: 'Vidi Firdaus, S.Pd', img: '../assets/img/Guru/', code: 'VFR' },
+  { id: 15, nama: 'Ana Nabilah Fauziah, S.Psi', img: '../assets/img/Guru/', code: 'ANF' },
+  { id: 16, nama: 'Hasanudin, S.Pd', img: '../assets/img/Guru/', code: 'HSN' },
+  { id: 17, nama: 'Alpina Damayanti, S.Pd', img: '../assets/img/Guru/', code: 'ADM' },
+  { id: 18, nama: 'Fani Fatimah Kahfi, A.Md.kom', img: '../assets/img/Guru/', code: 'FFK' },
+  { id: 19, nama: 'Andri Prasetyo, S.Pd', img: '../assets/img/Guru/', code: 'APR' },
+  { id: 20, nama: 'Fahmi Aji Fachrurroji, S.Pd', img: '../assets/img/Guru/', code: 'FAF' },
+  { id: 21, nama: 'Silpina Irawan, S.T', img: '../assets/img/Guru/', code: 'SPI' },
+  { id: 22, nama: 'Sandi Yusup, S.Pd', img: '../assets/img/Guru/', code: 'SYU' },
+  { id: 23, nama: 'Achmad Haris Subagdja, S.Pd', img: '../assets/img/Guru/', code: 'AHS'}
 ];
 
 if (info_guru) {
   info_guru.innerHTML = guru_list.map(guru=>
   `
   <div class="block" data-aos="fade-up" data-aos-delay="8000">
-    <div class="guru-box bg-[#1a1b26] p-6 text-center rounded-lg hover:scale-105">
+    <div class="bg-[#1a1b26] p-6 text-center rounded-lg hover:scale-105">
       <img src="${guru.img}" alt="${guru.nama}" class="w-full h-40 object-cover rounded-full mb-4">
       <h2 class="text-lg font-semibold text-white">${guru.nama}</h2>
-      <p class="text-white mt-2">${guru.jobDesc}</p>
+      <p class="text-white mt-2">${guru.code}</p>
     </div>
   </div>
   `
