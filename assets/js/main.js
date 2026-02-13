@@ -111,37 +111,29 @@ if (contactForm) {
 const info_guru = document.getElementById('info-guru');
 
 const guru_list = [
-  { id: 1, nama: 'Yanti Mulyanti, S.Pd', img: '../assets/img/Guru/.jpeg', code: 'YMT'},
-  { id: 2, nama: 'Cecep Agus, S.Kom', img: '../assets/img/Guru/.jpeg', code: 'CAG'},
-  { id: 3, nama: 'Handy Rusnandy, S.Kom', img: '../assets/img/Guru/.jpeg', code: 'HRS'},
-  { id: 4, nama: 'Tessa Nosalia Yosianti, S.Pd', img: '../assets/img/Guru/.jpeg', code: 'TNY' },
-  { id: 5, nama: 'Tati Dewi Widastuty, S.Pd', img: '../assets/img/Guru/.jpeg', code: 'TDW' },
-  { id: 6, nama: 'Fiqi Akhmad Taufiq, S.Pd', img: '../assets/img/Guru/.jpeg', code: 'FAT' },
-  { id: 7, nama: 'Dede Sinta Kristi, S.Hum', img: '../assets/img/Guru/DSK.jpeg', code: 'DSK' },
-  { id: 8, nama: 'Ahmad Adistia, S.Kom', img: '../assets/img/Guru/.jpeg', code: 'AAD' },
-  { id: 9, nama: 'Devi Kumala Asmawati', img: '../assets/img/Guru/.jpeg', code: 'DKA' },
-  { id: 10, nama: 'Riki Ramadan, S.Kom', img: '../assets/img/Guru/.jpeg', code: 'RKI' },
-  { id: 11, nama: 'Ridwan Firdaus Suwadi Putra, S.Kom', img: '../assets/img/Guru/RID.jpeg', code: 'RID' },
-  { id: 12, nama: 'Mukti Alimin, S.Kom', img: '../assets/img/Guru/MKT.jpeg', code: 'MKT' },
-  { id: 13, nama: 'Ridwan Maulana, A.Md', img: '../assets/img/Guru/RWN.jpeg', code: 'RWN' },
-  { id: 14, nama: 'Vidi Firdaus, S.Pd', img: '../assets/img/Guru/VFR.jpeg', code: 'VFR' },
-  { id: 15, nama: 'Ana Nabilah Fauziah, S.Psi', img: '../assets/img/Guru/ANF.jpeg', code: 'ANF' },
-  { id: 16, nama: 'Hasanudin, S.Pd', img: '../assets/img/Guru/.jpeg', code: 'HSN' },
-  { id: 17, nama: 'Alpina Damayanti, S.Pd', img: '../assets/img/Guru/.jpeg', code: 'ADM' },
-  { id: 18, nama: 'Fani Fatimah Kahfi, A.Md.kom', img: '../assets/img/Guru/.jpeg', code: 'FFK' },
-  { id: 19, nama: 'Andri Prasetyo, S.Pd', img: '../assets/img/Guru/.jpeg', code: 'APR' },
-  { id: 20, nama: 'Fahmi Aji Fachrurroji, S.Pd', img: '../assets/img/Guru/.jpeg', code: 'FAF' },
-  { id: 21, nama: 'Silpina Irawan, S.T', img: '../assets/img/Guru/.jpeg', code: 'SPI' },
-  { id: 22, nama: 'Sandi Yusup, S.Pd', img: '../assets/img/Guru/.jpeg', code: 'SYU' },
-  { id: 23, nama: 'Achmad Haris Subagdja, S.Pd', img: '../assets/img/Guru/.jpeg', code: 'AHS'}
+  { nama: 'Yanti Mulyanti, S.Pd', img: '../assets/img/Guru/YMT.jpeg', code: 'YMT'},
+  { nama: 'Cecep Agus, S.Kom', img: '../assets/img/Guru/CAG.jpeg', code: 'CAG'},
+  { nama: 'Handy Rusnandy, S.Kom', img: '../assets/img/Guru/HRS.png', code: 'HRS'},
+  { nama: 'Tessa Nosalia Yosianti, S.Pd', img: '../assets/img/Guru/TNY.png', code: 'TNY' },
+  { nama: 'Tati Dewi Widastuty, S.Pd', img: '../assets/img/Guru/TDW.png', code: 'TDW' },
+  { nama: 'Dede Sinta Kristi, S.Hum', img: '../assets/img/Guru/DSK.jpeg', code: 'DSK' },
+  { nama: 'Ahmad Adistia, S.Kom', img: '../assets/img/Guru/AAD.png', code: 'AAD' },
+  { nama: 'Riki Ramadan, S.Kom', img: '../assets/img/Guru/.jpeg', code: 'RKI' },
+  { nama: 'Ridwan Firdaus Suwadi Putra, S.Kom', img: '../assets/img/Guru/RID.jpeg', code: 'RID' },
+  { nama: 'Mukti Alimin, S.Kom', img: '../assets/img/Guru/MKT.jpeg', code: 'MKT' },
+  { nama: 'Ridwan Maulana, A.Md', img: '../assets/img/Guru/RWN.jpeg', code: 'RWN' },
+  { nama: 'Vidi Firdaus, S.Pd', img: '../assets/img/Guru/VFR.jpeg', code: 'VFR' },
+  { nama: 'Ana Nabilah Fauziah, S.Psi', img: '../assets/img/Guru/ANF.jpeg', code: 'ANF' },
+  { nama: 'Hasanudin, S.Pd', img: '../assets/img/Guru/.jpeg', code: 'HSN' },
+  { nama: 'Alpina Damayanti, S.Pd', img: '../assets/img/Guru/.jpeg', code: 'ADM' }
 ];
 
 if (info_guru) {
   info_guru.innerHTML = guru_list.map(guru=>
   `
   <div class="block" data-aos="fade-up" data-aos-delay="8000">
-    <div class="bg-[#1a1b26] p-6 text-center rounded-lg hover:scale-105">
-      <img src="${guru.img}" alt="${guru.nama}" class="w-full min-h-full object-cover rounded-full mb-4">
+    <div class="bg-[#1a1b26] p-6 text-center rounded-lg hover:scale-105 w-64 h-64">
+      <img src="${guru.img}" alt="${guru.nama}" class="w-32 h-32 object-cover rounded-full mb-4 block mx-auto">
       <h2 class="text-lg font-semibold text-white">${guru.nama}</h2>
       <p class="text-white mt-2">${guru.code}</p>
     </div>
