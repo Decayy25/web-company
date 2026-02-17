@@ -81,6 +81,7 @@ const eskul_list = [
   {eks: 'Pik-r', img: '../assets/img/Ekstrakurikuler/pik-r.jpg', href: 'https://www.instagram.com/pikr.smrt/'},
   {eks: 'MAPA', img: '../assets/img/Ekstrakurikuler/mapa.jpg', href: 'https://www.instagram.com/rohis.smartclk/'},
   {eks: 'Karate', img: '../assets/img/Ekstrakurikuler/karate.jpg', href: 'https://www.instagram.com/bkc_smart/'},
+  {eks: 'Jurnalis', img: '../assets/img/Ekstrakurikuler/jurnalis.jpeg', href: 'https://www.instagram.com/smartinactions_/'}
 ];
 
 // tempalte literal
