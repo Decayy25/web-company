@@ -78,10 +78,10 @@ const eskul_list = [
   {eks: 'PMR', img: '../assets/img/Ekstrakurikuler/pmr.jpg', href: 'https://www.instagram.com/pmrsmart__/'},
   {eks: 'Badbinton', img: '../assets/img/Ekstrakurikuler/badbinton.jpg', href: 'https://www.instagram.com/shutlemater_/'},
   {eks: 'Voli', img: '../assets/img/Ekstrakurikuler/voli.jpg', href: 'https://www.instagram.com/_smart_vollyball/'},
-  {eks: 'Pik-r', img: '../assets/img/Ekstrakurikuler/pik-r.jpg', href: 'https://www.instagram.com/pikr.smrt/'},
+  {eks: 'Pik-r', img: '../assets/img/Ekstrakurikuler/pik_r.jpg', href: 'https://www.instagram.com/pikr.smrt/'},
   {eks: 'MAPA', img: '../assets/img/Ekstrakurikuler/mapa.jpg', href: 'https://www.instagram.com/rohis.smartclk/'},
   {eks: 'Karate', img: '../assets/img/Ekstrakurikuler/karate.jpg', href: 'https://www.instagram.com/bkc_smart/'},
-  {eks: 'Jurnalis', img: '../assets/img/Ekstrakurikuler/jurnalis.jpeg', href: 'https://www.instagram.com/smartinactions_/'}
+  {eks: 'Jurnalis', img: '../assets/img/Ekstrakurikuler/jurnalis.jpg', href: 'https://www.instagram.com/smartinactions_/'}
 ];
 
 // tempalte literal
@@ -155,7 +155,7 @@ const bntn_akademik_list = [
 
 if(info_bntn_akademik) {
   info_bntn_akademik.innerHTML = bntn_akademik_list.map(bntn_akademik=>`
-    <div class="p-4 bg-[#1a1b26] rounded-2xl border-5 border-[#51a2ff]" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+    <div class="p-6 bg-[#1a1b26] rounded-2xl border-[5px] border-[#51a2ff] transition-transform hover:scale-105" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
       <h3 class="text-white font-semibold">${bntn_akademik.title}</h3>
       <br>
       <p>
