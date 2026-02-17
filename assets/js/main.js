@@ -115,18 +115,18 @@ const guru_list = [
   { nama: 'Yanti Mulyanti, S.Pd', img: '../assets/img/Guru/YMT.jpeg', code: 'YMT'},
   { nama: 'Cecep Agus, S.Kom', img: '../assets/img/Guru/CAG.jpeg', code: 'CAG'},
   { nama: 'Handy Rusnandy, S.Kom', img: '../assets/img/Guru/HRS.png', code: 'HRS'},
+  { nama: 'Alpina Damayanti, S.Pd', img: '../assets/img/Guru/ADM.png', code: 'ADM' },
   { nama: 'Tessa Nosalia Yosianti, S.Pd', img: '../assets/img/Guru/TNY.png', code: 'TNY' },
   { nama: 'Tati Dewi Widastuty, S.Pd', img: '../assets/img/Guru/TDW.png', code: 'TDW' },
   { nama: 'Dede Sinta Kristi, S.Hum', img: '../assets/img/Guru/DSK.jpeg', code: 'DSK' },
   { nama: 'Ahmad Adistia, S.Kom', img: '../assets/img/Guru/AAD.png', code: 'AAD' },
-  { nama: 'Riki Ramadan, S.Kom', img: '../assets/img/Guru/.jpeg', code: 'RKI' },
+  { nama: 'Riki Ramadan, S.Kom', img: '../assets/img/Guru/RKI.jpg', code: 'RKI' },
   { nama: 'Ridwan Firdaus Suwadi Putra, S.Kom', img: '../assets/img/Guru/RID.jpeg', code: 'RID' },
   { nama: 'Mukti Alimin, S.Kom', img: '../assets/img/Guru/MKT.jpeg', code: 'MKT' },
   { nama: 'Ridwan Maulana, A.Md', img: '../assets/img/Guru/RWN.jpeg', code: 'RWN' },
   { nama: 'Vidi Firdaus, S.Pd', img: '../assets/img/Guru/VFR.jpeg', code: 'VFR' },
   { nama: 'Ana Nabilah Fauziah, S.Psi', img: '../assets/img/Guru/ANF.jpeg', code: 'ANF' },
-  { nama: 'Hasanudin, S.Pd', img: '../assets/img/Guru/.jpeg', code: 'HSN' },
-  { nama: 'Alpina Damayanti, S.Pd', img: '../assets/img/Guru/.jpeg', code: 'ADM' }
+  { nama: 'Hasanudin, S.Pd', img: '../assets/img/Guru/HSN.jpg', code: 'HSN' }
 ];
 
 if (info_guru) {
